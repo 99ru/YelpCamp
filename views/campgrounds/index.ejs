@@ -8,13 +8,18 @@
   </head>
   <body>
     <!-- renders all titles with their  in href -->
+    <h1>All Campgrounds</h1>
+    <div>
+      <a href="/campgrounds/new">NEW CAMPGROUND</a>
+    </div>
+
     <ul>
-      <h1>All Campgrounds</h1>
       <% for (let campground of campgrounds) {%>
       <li>
         <a href="/campgrounds/<%= campground._id %>"><%= campground.title %></a>
       </li>
       <% } %>
     </ul>
+    
   </body>
 </html>
